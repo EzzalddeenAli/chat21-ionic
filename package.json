@@ -16,12 +16,16 @@
         "clean": "ionic-app-scripts clean",
         "build": "ionic-app-scripts build",
         "start": "node server.js",
+            "heroku-postbuild": "ng build --prod",
         "lint": "ionic-app-scripts lint",
         "ionic:build": "ionic-app-scripts build",
         "ionic:serve": "ionic-app-scripts serve",
         "compodoc": "./node_modules/.bin/compodoc -d ./docs/ -p ./tsconfig.json",
         "postinstall": "ionic cordova platform add browser --save && ionic cordova build browser"
-    },
+    }, "engines": {
+    "npm": "6.x",
+	"node": "12.x"
+  },
     "dependencies": {
         "@angular/animations": "7.2.9",
         "@angular/common": "7.2.9",
