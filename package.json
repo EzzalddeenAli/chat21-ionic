@@ -24,7 +24,7 @@
         "postinstall": "ionic cordova platform add browser --save && ionic cordova build browser"
     }, "engines": {
     "npm": "6.x",
-	"node": "12.x"
+	"node": "10.x"
   },
     "dependencies": {
         "@angular/animations": "7.2.9",
